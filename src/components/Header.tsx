@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -16,10 +17,11 @@ export function Header() {
     <header className="site-header">
       <div className="container nav">
         <a className="brand" href="#inicio" aria-label="Alô Delivery">
-          <span className="brand-mark">A</span>
-          <span className="brand-name">
-            Alô <strong>Delivery</strong>
-          </span>
+          <img
+            className="alo-delivery-logo"
+            src="/logo.png"
+            alt="Alô Delivery"
+          />
         </a>
 
         <nav className="desktop-nav" aria-label="Navegação principal">
@@ -30,10 +32,19 @@ export function Header() {
           ))}
         </nav>
 
-        <a className="nav-cta" href="#contato">
-          Falar com um especialista
-          <span aria-hidden="true">↗</span>
-        </a>
+        <div className="nav-actions">
+          <a
+            className="nav-panel"
+            href="https://alo-delivery-painel.vercel.app"
+          >
+            Acessar painel
+          </a>
+
+          <a className="nav-cta" href="#contato">
+            Falar com um especialista
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
 
         <button
           className="menu-toggle"
@@ -49,14 +60,32 @@ export function Header() {
 
       <div className={`mobile-menu${open ? " open" : ""}`}>
         {NAV_LINKS.map((link) => (
-          <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+          <a
+            key={link.href}
+            href={link.href}
+            onClick={() => setOpen(false)}
+          >
             {link.label}
           </a>
         ))}
-        <a className="mobile-cta" href="#contato" onClick={() => setOpen(false)}>
+
+        <a
+          className="mobile-panel"
+          href="https://alo-delivery-painel.vercel.app/login"
+          onClick={() => setOpen(false)}
+        >
+          Acessar painel
+        </a>
+
+        <a
+          className="mobile-cta"
+          href="#contato"
+          onClick={() => setOpen(false)}
+        >
           Falar com um especialista
         </a>
       </div>
     </header>
   );
 }
+

@@ -4,10 +4,11 @@ export function Footer() {
       <div className="container footer-top">
         <div className="footer-brand">
           <a className="brand" href="#inicio">
-            <span className="brand-mark">A</span>
-            <span className="brand-name">
-              Alô <strong>Delivery</strong>
-            </span>
+            <img
+    className="alo-delivery-logo"
+    src="/logo.png"
+    alt="Alô Delivery"
+  />
           </a>
           <p>Seu delivery. Mais simples. Mais lucrativo.</p>
           <small>Ipê · Rio Grande do Sul</small>
