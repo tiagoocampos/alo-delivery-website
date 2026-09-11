@@ -37,7 +37,7 @@ export function Header() {
             className="nav-panel"
             href="https://alo-delivery-painel.vercel.app"
           >
-            Acessar painel
+            Acessar
           </a>
 
           <a className="nav-cta" href="#contato">

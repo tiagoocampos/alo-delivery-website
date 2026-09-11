@@ -159,7 +159,7 @@ select {
 
 /* NOVO: botão Acessar painel */
 .nav-panel {
-  border: 1px solid #dce1e8;
+  
   background: #fff;
   color: var(--ink);
   border-radius: 999px;
@@ -179,7 +179,7 @@ select {
   background: var(--blue);
   color: #fff;
   border-radius: 999px;
-  padding: 14px 21px;
+  padding: 10px 10px;
   font-size: 13px;
   font-weight: 700;
   box-shadow: 0 10px 26px rgba(23, 105, 224, .2);
